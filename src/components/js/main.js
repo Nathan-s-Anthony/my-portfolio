@@ -6,7 +6,7 @@ const Main = () => {
         <>
        
             <main className="h-auto  md:flex-row min-w-full flex-col relative   flex-wrap justify-center content-center gap-5 flex z-5" >
-                <div className="fixed right-0 top-0 h-full  bg-blue-600">
+                <div className="fixed right-0 top-0 h-full  bg-transparent flex items-center">
             <Pagination/>
             </div>
                 <section className=" flex flex-col flex-wrap md:flex-row md:items-start w-full  mt-20 md:container mx-auto justify-center items-center z-1 h-auto ">
