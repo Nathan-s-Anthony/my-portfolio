@@ -1,21 +1,40 @@
 import React from "react";
 import { Button } from './buttons.js';
+import { useState, useEffect } from 'react';
 // import { Pagination } from './pagination';
-import Typical from 'react-typical';
+//import Typical from 'react-typical';
 
 const Main = () => {
+    const [scroll, setScroll] = useState(false);
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setScroll(window.scrollY > 0);
+        });
+
+    }, []);
     return (
         <>
-            <main className="  md:flex-row min-w-full flex-col relative   flex-wrap justify-center content-center gap-5 flex z-0 " >
+            <main className=" min-w-full relative   " >
                 <div className="fixed right-0 top-0 h-full  bg-transparent flex items-center">
                     {/* <Pagination /> */}
                 </div>
-                <section className="relative h-section flex  flex-wrap md:flex-row md:items-start w-full   md:container mx-auto justify-center items-center   z-1">
-                    <div className="  flex  flex-col  flex-wrap align-center mb-20 md:mt-40 container md:w-3/6 py-10 px-10 ">
-                        <h1 className=" md:text-left text-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 via-purple-500 to-blue-500 tracking-wide  mb-5 mt-5 container ">Hello my name is Nathan </h1>
-                        <h3 className="md:text-left text-center text-2xl font-extrabold text-transparent text-primary tracking-wide  mb-5 mt-5 container">Im currently a front-end developer </h3>
-                         <span className="color-transparent w-10 h-10 text-4xl animate-pulse text-center"> &#128151; </span>
-                        <Typical className="md:text-3xl text-3xl  text-center text-primary"
+                <section className="relative lg:h-section flex  h-screen flex-wrap md:flex-row md:items-start w-full   md:container mx-auto justify-center items-center   z-1">
+                    <div className="  flex  flex-col  flex-wrap align-center lg:mb-20 lg:mt-40  md:w-3/6 w-full ">
+                        <div className=" md:text-left text-center flex flex-col  items-center justify-around gap-8 container ">
+                            <h1 className=" text-md font-bold  container text-primary  mt-10"  >Hello, my name is Nathan<span className="ml-2">👋</span></h1>
+                            <h3 className="md:text-left text-center text-5xl font-extrabold   text-transparent bg-clip-text bg-gradient-to-br from-blue-500 via-blue-600 to-purple-500 tracking-wide  ml-5 mr-5  ">I'm a front-end developer </h3>
+                            <p className="md:text-left text-center text-lg font-md container ml-5 mr-5  text-primary ">Welcome to my portfolio website, I am currently working as a front-end developer with a <span className="color-transparent w-10 h-10 text-lg  animate-pulse text-center mx-auto"> 💓 </span> for everything Web Development</p>
+                            <div className="w-full ">
+                                <div className="  flex flex-row justify-center gap-8 container ">
+                                    <Button size="sm" textColor="white" bgColor=" bg-blue-600 hover:bg-blue-700" text="Get in touch" />
+                                    <Button size="sm" textColor="text-primary" bgColor="none" borderColor="purple-700" text="View my work" />
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {/* <Typical className="md:text-3xl text-3xl  text-center text-primary"
                             steps={[
                                 ' <html>',
                                 3000,
@@ -28,30 +47,58 @@ const Main = () => {
                             ]}
                             wrapper="h3"
                             loop={Infinity}
-                            
-                        /> 
-                        <Button />
 
+                        /> */}
+
+                        <div className="w-full flex-col justify-evenly items-center align-center container text-center h-4">
+                            <span className={scroll ? "transition duration-200 ease-in-out transform translate-y-48 mx-auto z-5  text-gray-300 " : "text-gray-300"}>Scroll Down</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" className={scroll ? "transition duration-200 ease-in-out transform translate-y-48 mx-auto text-gray-300  h-6 w-6" : "h-6 w-6 animate-bounce mt-5 mb-5 text-gray-300 mx-auto"} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                            </svg>
+                        </div>
                     </div>
- 
-                    <div className="  flex  flex-col  flex-wrap md:w-3/6  content-start md:container h-top-bar justify-center items-center  md:mb-20 mt-40 " >
-                        <div className="relative w-72 h-96">
+                    <div className="  flex  flex-col  flex-wrap md:w-3/6  content-start md:container justify-center items-center  md:mb-20 md:mt-40 " >
+                        <div className="relative w-96 h-96">
                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
                                 <path fill="#0F62FE" d="M57.2,-16.6C65.8,7.9,58.7,39.5,37.7,55.6C16.8,71.7,-18.1,72.3,-37.3,57C-56.5,41.8,-60.1,10.5,-51.2,-14.3C-42.4,-39.1,-21.2,-57.5,1.5,-58C24.3,-58.5,48.6,-41.1,57.2,-16.6Z" transform="translate(100 100)" />
                             </svg>
                         </div>
 
-                        <div className="absolute bottom-0 left-0 w-full flex flex-col duration-700 transition-all flex-wrap items-center align-center justify-center transform   animate-bounce delay-700  ">
-                            <span className="text-gray-300 ">Scroll Down</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 animate-bounce mt-5 mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                            </svg>
-                        </div>
                     </div>
 
                 </section>
 
+                <section className="relative lg:h-section flex  h-screen flex-wrap md:flex-row md:items-start w-full   md:container mx-auto justify-center items-center   z-1">
+                    <div className="  flex  flex-col  flex-wrap align-center lg:mb-20 lg:mt-40  md:w-3/6 w-full ">
+                        <div className=" md:text-left text-center flex flex-col  items-center justify-around gap-5 container ">
+                            <h1 className=" text-md font-bold  mt-5 container text-primary "  >About Me<span className="ml-2">👋</span></h1>
+                            <h3 className="md:text-left text-center text-4xl font-extrabold   text-transparent bg-clip-text bg-gradient-to-br from-blue-500 via-blue-600 to-purple-500 tracking-wide  mb-5 mt-5 ml-5 mr-5">My education & work experience </h3>
+                            <ul class="list-inside  list-disc bg-rose-200 ...">
+                                <li>BSC IT </li>
+                                ...
+                            </ul>
 
+                            <ul class="list-outside bg-rose-200 ...">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                                ...
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div className="w-full  bg-gradient-to-br from-blue-500 via-blue-600 to-purple-500 py-10 px-10 ">
+                   <h2 className="text-white font-bold text-4xl tracking-wide text-center mb-5 mt-5">Turning your ideas into reality </h2>
+                   <h4 className="text-white font-bold text-2xl text-center">Lets get started</h4>
+                    </div>
+                    <div className="  flex  flex-col  flex-wrap md:w-3/6  content-start md:container justify-center items-center  md:mb-20 md:mt-40 " >
+                        <div className="relative w-76 h-96">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                                <path fill="#0F62FE" d="M57.2,-16.6C65.8,7.9,58.7,39.5,37.7,55.6C16.8,71.7,-18.1,72.3,-37.3,57C-56.5,41.8,-60.1,10.5,-51.2,-14.3C-42.4,-39.1,-21.2,-57.5,1.5,-58C24.3,-58.5,48.6,-41.1,57.2,-16.6Z" transform="translate(100 100)" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </section>
                 {/* <section className=" flex flex-col flex-wrap md:flex-row md:items-start w-full  mt-20 md:container mx-auto justify-center items-center z-1 h-auto ">
 
 
