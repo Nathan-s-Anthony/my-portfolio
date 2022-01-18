@@ -10,3 +10,8 @@ font-family: inherit;
 html{
   z-index:0;
 }
+img {
+  clip-path: circle(73.2% at 51% 23%);
+  background-color: #2563EB;
+  box-shadow: 0 1px 2px ;
+}
