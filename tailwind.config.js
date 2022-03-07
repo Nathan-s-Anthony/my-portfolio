@@ -2,38 +2,51 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: 'class',
   theme: {
-    
+
     extend: {
-      extend: {
-        keyframes: {
-         fadeIn: {
-           '0%': { opacity: '0' },
-           '100%': { opacity: '1'  },
-         }
-        }
-      },
-      height:{
-        "top-bar" :"8vh",
-        "header" :"12vh",
-        "section" :"80vh",
-      },
+
       animation: {
-        fadeIn: 'wiggle 1s ease-in-out infinite',
-       },
-      colors:{
-        primary:"#2e2e2e",
-        secondary:"#2e2e2e85",
-      }
+        fadeIn: ' 1s ease-in-out infinite',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3edeg' },
+          "50%": { transform: 'rotate(3deg' },
+        },
+      },
+      width: {
+
+        "mainImgW": "30rem",
+
+
+      },
+      height: {
+        "top-bar": "8vh",
+        "header": "12vh",
+        "tiles-section": "40rem",
+        "mainImgH": "30rem",
+
+      },
+
+
+      colors: {
+        primary: "#1f2745",
+        secondary: "#100d1f",
+        textPrimary:"#fe012e",
+        textSecondary:"#5c0f38",
       
-    },
+      }
+
+    }
   },
   variants: {
 
     extend: {
-  
+
     },
-  
+
   },
-  
+
   plugins: [],
+
 }
