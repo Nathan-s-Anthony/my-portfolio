@@ -1,5 +1,8 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  safelist: [
+    'bg-blue-600 ',
+  ],
   darkMode: 'class',
   theme: {
 
@@ -34,6 +37,7 @@ module.exports = {
         secondary: "#100d1f",
         textPrimary:"#333",
         textSecondary:"#5c0f38",
+    
       
       }
 
