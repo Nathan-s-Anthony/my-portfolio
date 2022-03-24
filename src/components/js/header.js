@@ -7,8 +7,8 @@ import React from 'react';
 import { Button } from './buttons.js'
 //import {MobileNavQuery} from './mediaqueries';
 import { MobileNav } from './mobileNav';
-import Typical from 'react-typical';
-
+//import Typical from 'react-typical';
+import {CodeIcon} from "@heroicons/react/outline";
 const Header = () => {
   // const [scroll, setScroll] = useState(false);
   // useEffect(() => {
@@ -37,31 +37,17 @@ const Header = () => {
 
           <nav className="lg:flex-row  flex-col flex-wrap w-full    items-center  md:container hidden lg:flex lg:py-2 lg:px-6 ">
             <div className=" relative md:w-1/6 flex flex-wrap justify-start align-center content-center flex-grow-0">
-           
-              <Typical className="md:text-3xl text-3xl  text-center text-gray-700"
-                steps={[
-                  'HTML',
-                  3000,
-                  ' Javascript',
-                  3000,
-                  ' :CSS',
-                  3000,
-                  ' REACT',
-                  3000,
-                ]}
-                wrapper="h3"
-                loop={Infinity}
 
-                
-              />
-
+            <CodeIcon className="w-10 h-10 text-gray-800 " />
+        
+      
             </div>
             <div className=" w-7/12 md:w-5/6 flex md:flex-row flex-col flex-grow ">
               <ul className="w-full flex md:flex-row flex-col flex-wrap justify-flex-end ">
                 <li className="w-full  md:flex-row flex-col flex-wrap justify-end md:content-center text-xl md:items-center  md:align-center gap-20 hidden md:flex" >
-                  <a href="/" className=" text-gray-700">Home</a>
-                  <a href="#about" className="font-medium text-medium md:text-xl text-gray-700">About</a>
-                  <a href="/" className="font-medium  text-medium md:text-xl text-gray-700" >Projects</a>
+                  <a href="/" className=" text-gray-800">Home</a>
+                  <a href="#about" className="font-medium text-medium md:text-xl text-gray-800">About</a>
+                  <a href="/" className="font-medium  text-medium md:text-xl text-gray-800" >Projects</a>
                   <Button size="sm" width="48" textColor="white" bgColor="indigo-500" borderColor="indigo-500 " text="Contact" />
 
 
