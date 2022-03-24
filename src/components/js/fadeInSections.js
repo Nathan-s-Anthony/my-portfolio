@@ -13,8 +13,7 @@ const FadeInSection =(props) =>{
       return () => observer.unobserve(observerRefValue);
     }, []);
     return (
-      <div
-        className={`fade-in-section ${isVisible ? 'is-visible flex lg:flex-row flex-col w-full items-center justify-center  mx-auto  -mt-20  ' : 'relative block '}`}
+      <div className={`fade-in-section ${isVisible ? 'is-visible flex lg:flex-row flex-col w-full items-center justify-center  mx-auto  -mt-20  ' : ''}`}
         ref={domRef}
       >
         {props.children}
