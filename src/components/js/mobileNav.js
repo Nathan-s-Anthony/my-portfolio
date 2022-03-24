@@ -19,9 +19,9 @@ const MobileNav = () => {
   return (
     <>
       <div className=" flex flex-row  justify-evenly align-center items-center w-full lg:hidden shadow-md h-full gap-10" >
-        <MoonIcon className="w-10 h-10 text-gray-500 " />
+        <MoonIcon className="w-10 h-10 text-textPrimary " />
         <div className=" flex shadows-md ">
-        <CodeIcon className="w-10 h-10 text-gray-500 " />
+        <CodeIcon className="w-10 h-10 text-textPrimary " />
           {/* <div className="p-1 bg-gradient-to-tr from-blue-500 via-blue-600 to-purple-500 rounded-full">
             <div className="bg-white rounded-full">
                <Images width="24" height="24" /> 
@@ -31,7 +31,7 @@ const MobileNav = () => {
         </div>
 
         <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#2e2e2e" onClick={() => {
-          setMobileMenu(<span className="flex h-48 w-full bg-red-400 absolute rounded-full right-0 top-0 transition delay-300 z-50 ">
+          setMobileMenu(<span className="flex absolute w-screen h-screen bg-red-400  inset-0  z-60 ">
             Hello</span>
 
           )
