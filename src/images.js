@@ -15,7 +15,7 @@ const Images = ({ width, height, alt, images, arrI, arrO,borderRadius }) => {
 
 
     return (
-        <img src={`${images[arrI][arrO]}`} className={classnames(`lg:w-${width} lg:h-${height} rounded-${borderRadius}  z-10  relative  w-20rem h-20rem  `)} alt={`${alt}`} />
+        <img src={`${images[arrI][arrO]}`} className={classnames(`lg:w-${width} lg:h-${height} rounded-${borderRadius}  z-10  relative  w-20 h-20  `)} alt={`${alt}`} />
 
     )
 }
