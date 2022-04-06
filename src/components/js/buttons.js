@@ -1,13 +1,9 @@
 import React from "react";
-import classnames from "classnames";
 
-const Button = ({ size, bgColor, textColor, text,borderColor,width }) => {
+const Button = ({  text,width}) => {
 
     return (
-        <button className={classnames(`bg-${bgColor} text-${textColor} border-${borderColor}  w-${width} bg-blue-600 transition duration-500 ease-in-out px-8 py-3 border border-transparent  rounded-md text-medium tracking-wide  mt-5 mb-5  `, {
-            "text-md": size === 'sm',
-            "text-xl": size === 'lg',
-        })}>
+        <button className={ "text-white bg-blue-600 transition duration-200 ease-in-out px-8 py-3 border transform hover:-translate-y-1   lg:w-3/6 w-4/6 rounded-md text-medium tracking-wide shadow-lg mt-5 mb-5 "}>
             {text}
         </button>
     )

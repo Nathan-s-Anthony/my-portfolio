@@ -9,17 +9,17 @@ module.exports = {
     extend: {
 
       animation: {
-        fadeIn: ' 1s ease-in-out infinite',
-      },
+        wiggle: 'wiggle 1s ease-in-out infinite',
+       },
       keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-3edeg' },
-          "50%": { transform: 'rotate(3deg' },
-        },
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
       },
       width: {
 
-        "mainImgW": "30rem",
+        "mainImgW": "auto",
 
 
       },
@@ -27,7 +27,7 @@ module.exports = {
         "top-bar": "8vh",
         "header": "12vh",
         "tiles-section": "40rem",
-        "mainImgH": "30rem",
+        "mainImgH": "auto",
 
       },
 
@@ -35,10 +35,10 @@ module.exports = {
       colors: {
         primary: "#1f2745",
         secondary: "#100d1f",
-        textPrimary:"#333",
-        textSecondary:"#5c0f38",
-    
-      
+        textPrimary: "#333",
+        textSecondary: "#5c0f38",
+
+
       }
 
     }
