@@ -1,8 +1,8 @@
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
 //import { Images } from "../../images";
-import { MoonIcon } from '@heroicons/react/outline';
-import {CodeIcon} from "@heroicons/react/outline";
+import { MoonIcon } from "@heroicons/react/outline";
+import { CodeIcon } from "@heroicons/react/outline";
 //import { Button } from './buttons.js';
 //import { MobileNavQuery } from './mediaqueries.js';
 
@@ -18,10 +18,10 @@ const MobileNav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   return (
     <>
-      <div className=" flex flex-row  justify-evenly align-center items-center w-full lg:hidden shadow-md h-full gap-10" >
-        <MoonIcon className="w-10 h-10 text-textPrimary " />
+      <div className=" flex flex-row  justify-evenly align-center items-center w-full lg:hidden shadow-md h-full gap-10">
+        {/* <MoonIcon className="w-10 h-10 text-textPrimary " /> */}
         <div className=" flex shadows-md ">
-        <CodeIcon className="w-10 h-10 text-textPrimary " />
+          <CodeIcon className="w-10 h-10 text-textPrimary " />
           {/* <div className="p-1 bg-gradient-to-tr from-blue-500 via-blue-600 to-purple-500 rounded-full">
             <div className="bg-white rounded-full">
                <Images width="24" height="24" /> 
@@ -29,15 +29,28 @@ const MobileNav = () => {
             </div>
           </div> */}
         </div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#2e2e2e" onClick={() => {
-          setMobileMenu(<span className="flex absolute w-screen h-screen bg-red-400  inset-0  z-60 ">
-            Hello</span>
-
-          )
-        }}>
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
+        {/* 
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-10 h-10"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="#2e2e2e"
+          onClick={() => {
+            setMobileMenu(
+              <span className="flex absolute w-screen h-screen bg-red-400  inset-0  z-60 ">
+                Hello
+              </span>
+            );
+          }}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg> */}
         {mobileMenu}
       </div>
 
@@ -59,6 +72,6 @@ const MobileNav = () => {
         </div>
       </div> */}
     </>
-  )
-}
+  );
+};
 export { MobileNav };
