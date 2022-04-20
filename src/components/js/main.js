@@ -111,44 +111,53 @@ const Main = () => {
       <Tiles />
 
       <section className="  relative  w-full lg:h-full   py-10">
-        <div className="  w-full h-full relative p-20">
+        <div className="  w-full h-full relative p-10">
           <div className="  w-full     relative transform  z-20" id="about">
             <div className="  flex  flex-wrap md:flex-row  w-full   md:container mx-auto justify-center items-center   z-30">
               <div className=" md:text-left text-center flex flex-col  items-center justify-evenly gap-5 container ">
                 <h2 className=" lg:text-center text-md font-extrabold lg:text-lg text-center container  lg:py-2 lg:px-6 text-textPrimary ">
                   My projects<span className="ml-2">📝</span>
                 </h2>
-                <h3 className=" lg:text-center text-center text-5xl xl:text-6xl  font-extrabold lg:py-2 lg:px-6  text-transparent text-textPrimary  tracking-wide   "></h3>
+                <h3 className=" lg:text-center text-center text-5xl xl:text-6xl  font-extrabold lg:py-2 lg:px-6  text-transparent text-textPrimary  tracking-wide   ">
+                  Projects that i have built
+                </h3>
                 <p className=" lg:w-3/6   text-center text-md lg:text-md  container  lg:py-2 lg:px-6  text-textPrimary   ">
                   {" "}
-                  Each project requirements are unique making them require
-                  different technologies,frameworks or libraries to accomplish.{" "}
+                  Take a look at the projects that I have built with various
+                  technologies{" "}
                 </p>
               </div>
             </div>
-            <article className="max-w-sm rounded overflow-hidden shadow-lg">
-              <div className="relative w-full m-auto">
+            <section className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
+              {/* <div className="relative w-full m-auto">
                 <Images
                   arrI="4"
                   arrO="0"
                   alt="Nathan Anthony"
                   borderRadius="none"
                 />
-              </div>
+              </div> */}
 
-              <div className="px-6 py-4">
+              <div className="px-2 pt-4">
                 <div className="font-bold text-xl mb-2">
                   Bookmark landing page
                 </div>
                 <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
+                  A clean and simple interface to organize your favourite
+                  websites. Open a new browser tab and see your sites load
+                  instantly. Try it for free.
                 </p>
-
-                <Button text="View post" />
               </div>
-              <div className="px-6 pt-4 pb-2">
+              <div className="px-2 pt-4">
+                <button
+                  className={
+                    "text-white bg-blue-600 transition duration-200 ease-in-out px-8 py-3 border transform hover:-translate-y-1  disabled lg:w-6/6  rounded-md text-medium tracking-wide shadow-lg mt-5 mb-5 "
+                  }
+                >
+                  Coming soon
+                </button>
+              </div>
+              <div className="px-2 pt-4 pb-2">
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                   #Gatsby
                 </span>
@@ -159,13 +168,13 @@ const Main = () => {
                   #WebDevelopment
                 </span>
               </div>
-            </article>
+            </section>
           </div>
         </div>
       </section>
 
       <section className="  relative  w-full lg:h-full   py-10">
-        <div className="  w-full h-full relative p-20">
+        <div className="  w-full h-full relative  p-10">
           <div className="  w-full     relative transform  z-20" id="about">
             <div className="  flex  flex-wrap md:flex-row  w-full   md:container mx-auto justify-center items-center   z-30">
               <div className=" md:text-left text-center flex flex-col  items-center justify-evenly gap-5 container ">
@@ -173,7 +182,7 @@ const Main = () => {
                   My Blog<span className="ml-2">📝</span>
                 </h2>
                 <h3 className=" lg:text-center text-center text-5xl xl:text-6xl  font-extrabold lg:py-2 lg:px-6  text-transparent text-textPrimary tracking-wide   ">
-                  My Skills
+                  Improve your knowledge
                 </h3>
                 <p className=" lg:w-3/6  text-center text-md lg:text-md  container  lg:py-2 lg:px-6  text-textPrimary   ">
                   {" "}
@@ -184,17 +193,17 @@ const Main = () => {
               </div>
             </div>
             <div className="w-full flex flex-row flex-wrap justify-center align-center lg:py-2 lg:px-6">
-              <article className="max-w-sm rounded overflow-hidden shadow-lg">
-                <div className="relative w-full m-auto">
+              <article className="max-w-sm rounded overflow-hidden shadow-lg mt-10 mb-10">
+                {/* <div className="relative w-full m-auto">
                   <Images
                     arrI="4"
                     arrO="0"
                     alt="Nathan Anthony"
                     borderRadius="none"
                   />
-                </div>
+                </div> */}
 
-                <div className="px-6 py-4">
+                <div className="px-2 pt-4">
                   <div className="font-bold text-xl mb-2">Sematic HTML</div>
                   <p className="text-gray-700 text-base">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -202,7 +211,15 @@ const Main = () => {
                     exercitationem praesentium nihil.
                   </p>
 
-                  <Button text="View post" />
+                  <div className="px-2 pt-4">
+                    <button
+                      className={
+                        "text-white bg-blue-600 transition duration-200 ease-in-out px-8 py-3 border transform hover:-translate-y-1   lg:w-6/6  rounded-md text-medium tracking-wide shadow-lg mt-5 mb-5 "
+                      }
+                    >
+                      Coming soon
+                    </button>
+                  </div>
                 </div>
                 <div className="px-6 pt-4 pb-2">
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
@@ -233,10 +250,12 @@ const Main = () => {
             className="  w-full  flex flex-col justify-center align-center gap-10   relative  z-20"
             id="contact"
           >
-            <div className="  flex  flex-wrap md:flex-row  w-full   md:container mx-auto justify-center items-center gap-10  z-30">
+            <div className=" text-white flex  flex-wrap md:flex-row  w-full   md:container mx-auto justify-center items-center gap-5  z-30">
               <p>Contact me today: </p>
-              <a href="mailto:nsanthony95@gmail.com">nsanthony95@gmail.com</a>
-              <div className=" md:text-left text-center flex flex-col  items-center justify-evenly  container ">
+              <a href="mailto:nsanthony95@gmail.com" className="text-white">
+                nsanthony95@gmail.com
+              </a>
+              <div className=" md:text-left text-center flex flex-col  items-center justify-evenly  container mt-20">
                 <p className="   text-center text-md lg:text-md  container   text-white  ">
                   Created with
                   <span className="color-transparent w-10 h-10 text-lg  animate-pulse text-center mx-auto">
