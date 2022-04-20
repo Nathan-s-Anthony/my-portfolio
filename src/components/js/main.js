@@ -128,8 +128,9 @@ const Main = () => {
                 </p>
               </div>
             </div>
-            <section className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
-              {/* <div className="relative w-full m-auto">
+            <div className="w-full flex flex-row flex-wrap justify-center align-center lg:py-2 lg:px-6">
+              <section className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
+                {/* <div className="relative w-full m-auto">
                 <Images
                   arrI="4"
                   arrO="0"
@@ -138,37 +139,38 @@ const Main = () => {
                 />
               </div> */}
 
-              <div className="px-2 pt-4">
-                <div className="font-bold text-xl mb-2">
-                  Bookmark landing page
+                <div className="px-2 pt-4">
+                  <div className="font-bold text-xl mb-2">
+                    Bookmark landing page
+                  </div>
+                  <p className="text-gray-700 text-base">
+                    A clean and simple interface to organize your favourite
+                    websites. Open a new browser tab and see your sites load
+                    instantly. Try it for free.
+                  </p>
                 </div>
-                <p className="text-gray-700 text-base">
-                  A clean and simple interface to organize your favourite
-                  websites. Open a new browser tab and see your sites load
-                  instantly. Try it for free.
-                </p>
-              </div>
-              <div className="px-2 pt-4">
-                <button
-                  className={
-                    "text-white bg-blue-600 transition duration-200 ease-in-out px-8 py-3 border transform hover:-translate-y-1  disabled lg:w-6/6  rounded-md text-medium tracking-wide shadow-lg mt-5 mb-5 "
-                  }
-                >
-                  Coming soon
-                </button>
-              </div>
-              <div className="px-2 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #Gatsby
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #FrontEnd
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #WebDevelopment
-                </span>
-              </div>
-            </section>
+                <div className="px-2 pt-4">
+                  <button
+                    className={
+                      "text-white bg-blue-600 transition duration-200 ease-in-out px-8 py-3 border transform hover:-translate-y-1  lg:w-6/6  rounded-md text-medium tracking-wide shadow-lg mt-5 mb-5 "
+                    }
+                  >
+                    Coming soon
+                  </button>
+                </div>
+                <div className="px-2 pt-4 pb-2">
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #Gatsby
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #FrontEnd
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #WebDevelopment
+                  </span>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </section>
@@ -193,7 +195,7 @@ const Main = () => {
               </div>
             </div>
             <div className="w-full flex flex-row flex-wrap justify-center align-center lg:py-2 lg:px-6">
-              <article className="max-w-sm rounded overflow-hidden shadow-lg mt-10 mb-10">
+              <article className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
                 {/* <div className="relative w-full m-auto">
                   <Images
                     arrI="4"
@@ -221,7 +223,7 @@ const Main = () => {
                     </button>
                   </div>
                 </div>
-                <div className="px-6 pt-4 pb-2">
+                <div className="px-2 pt-4">
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                     #HTML
                   </span>
