@@ -243,7 +243,7 @@ const Main = () => {
         </div>
       </section>
 
-      <footer>
+      <footer id="contact">
         <div
           className="  w-full h-full bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-500  relative p-10"
           id="contact"
