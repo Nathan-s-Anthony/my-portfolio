@@ -110,7 +110,7 @@ const Main = () => {
 
       <Tiles />
 
-      <section className="  relative  w-full lg:h-full   py-10">
+      <section className="  relative  w-full lg:h-full   py-10" id="projects">
         <div className="  w-full h-full relative p-10">
           <div className="  w-full     relative transform  z-20" id="about">
             <div className="  flex  flex-wrap md:flex-row  w-full   md:container mx-auto justify-center items-center   z-30">

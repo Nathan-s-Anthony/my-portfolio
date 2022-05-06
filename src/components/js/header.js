@@ -80,7 +80,10 @@ const Header = () => {
                   >
                     About
                   </a>
-                  <a href="/" className="inline-block nav-link-transition ">
+                  <a
+                    href="#projects"
+                    className="inline-block nav-link-transition "
+                  >
                     Projects
                   </a>
 
