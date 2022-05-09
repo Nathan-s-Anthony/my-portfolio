@@ -3,12 +3,8 @@ import { Button } from "./buttons.js";
 import { ArrowNarrowDownIcon } from "@heroicons/react/outline";
 import { ArrowNarrowUpIcon } from "@heroicons/react/outline";
 import { useState, useEffect } from "react";
-
 import { Images } from "../../images";
 import { Tiles } from "./tiles.js";
-// import { Pagination } from './pagination';
-//import Typical from 'react-typical';
-
 const Main = () => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
@@ -68,14 +64,16 @@ const Main = () => {
         <div className="  flex  flex-col justify-center flex-wrap align-center items-center lg:w-3/6  w-full ">
           <div className="w-full h-full flex flex-col md:flex-row justify-center relative align-center items-center  ">
             <div className="w-full h-full flex flex-col md:flex-row align-center  items-center lg:items-end relative justify-center lg:justify-end md:mr-10 md:ml-10 lg:mb-0 lg:mt-10 mb-10 ">
-              <div className="relative  ">
-                <div className=" w-full bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-500 absolute inset-0 rounded-full shadow-lg"></div>
+              <div className="relative ml-8 mr-8 ">
+                <div className=" w-full bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-500 absolute inset-0 rounded-full shadow-lg "></div>
 
                 <Images
                   arrI="0"
                   arrO="0"
                   alt="Nathan Anthony"
                   borderRadius="full"
+                  width="full"
+                  height="full"
                 />
               </div>
             </div>
@@ -128,16 +126,20 @@ const Main = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full flex flex-row flex-wrap justify-center align-center lg:py-2 lg:px-6">
+            <div className="w-full flex flex-row flex-wrap justify-center align-center lg:py-2 lg:px-6 gap-10">
               <section className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
-                {/* <div className="relative w-full m-auto">
-                <Images
-                  arrI="4"
-                  arrO="0"
-                  alt="Nathan Anthony"
-                  borderRadius="none"
-                />
-              </div> */}
+                <div className="relative w-full m-auto h-72">
+                  <div className="w-full h-full">
+                    <Images
+                      arrI="5"
+                      arrO="0"
+                      alt="Bookmark Landing Page Thumbnail"
+                      borderRadius="none"
+                      width="full"
+                      height="full"
+                    />
+                  </div>
+                </div>
 
                 <div className="px-2 pt-4">
                   <div className="font-bold text-xl mb-2">
@@ -150,17 +152,86 @@ const Main = () => {
                   </p>
                 </div>
                 <div className="px-2 pt-4">
-                  <button
-                    className={
-                      "text-white bg-blue-600 transition duration-200 ease-in-out px-8 py-3 border transform hover:-translate-y-1  lg:w-6/6  rounded-md text-medium tracking-wide shadow-lg mt-5 mb-5 "
-                    }
+                  <a
+                    href="https://bookmark-landing-page-nathan.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    Coming soon
-                  </button>
+                    <button
+                      className={
+                        "text-white bg-blue-600 transition duration-200 ease-in-out px-8 py-3 border transform hover:-translate-y-1  lg:w-6/6  rounded-md text-medium tracking-wide shadow-lg mt-5 mb-5 "
+                      }
+                    >
+                      View project
+                    </button>
+                  </a>
                 </div>
                 <div className="px-2 pt-4 pb-2">
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                     #Gatsby
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #React
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #React-helmet
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #SCSS
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #FrontEnd
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #WebDevelopment
+                  </span>
+                </div>
+              </section>
+              <section className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
+                <div className="relative w-full m-auto h-72">
+                  <div className="w-full h-full">
+                    <Images
+                      arrI="6"
+                      arrO="0"
+                      alt="Time Tracking Dashboard Thumbnail"
+                      borderRadius="none"
+                      width="full"
+                      height="full"
+                    />
+                  </div>
+                </div>
+
+                <div className="px-2 pt-4">
+                  <div className="font-bold text-xl mb-2">
+                    Time Tracking Dashboard
+                  </div>
+                  <p className="text-gray-700 text-base">
+                    Track your daily, weekly or monthly routine with various
+                    activities with a simple and intuitive interface.Compare
+                    your results to previous weeks.
+                  </p>
+                </div>
+                <div className="px-2 pt-4">
+                  <a href="/" target="_blank" rel="noreferrer">
+                    <button
+                      className={
+                        "text-white bg-blue-600 transition duration-200 ease-in-out px-8 py-3 border transform hover:-translate-y-1  lg:w-6/6  rounded-md text-medium tracking-wide shadow-lg mt-5 mb-5 "
+                      }
+                    >
+                      Coming Soon
+                    </button>
+                  </a>
+                </div>
+                <div className="px-2 pt-4 pb-2">
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #Gatsby
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #React
+                  </span>
+
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #SCSS
                   </span>
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                     #FrontEnd
@@ -196,21 +267,22 @@ const Main = () => {
             </div>
             <div className="w-full flex flex-row flex-wrap justify-center align-center lg:py-2 lg:px-6">
               <article className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
-                {/* <div className="relative w-full m-auto">
+                <div className="relative w-full m-auto h-72">
                   <Images
                     arrI="4"
                     arrO="0"
-                    alt="Nathan Anthony"
+                    alt="Semantic HTML Thumbnail"
                     borderRadius="none"
+                    width="full"
+                    height="full"
                   />
-                </div> */}
+                </div>
 
                 <div className="px-2 pt-4">
                   <div className="font-bold text-xl mb-2">Sematic HTML</div>
                   <p className="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                    exercitationem praesentium nihil.
+                    Semantic HTML reinforces the meaning of a web page and helps
+                    search engines determine the importance of web pages.
                   </p>
 
                   <div className="px-2 pt-4">
