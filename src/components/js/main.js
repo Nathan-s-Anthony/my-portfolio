@@ -109,7 +109,7 @@ const Main = () => {
                 <p className=" lg:w-3/6   text-center text-md lg:text-md  container  lg:py-2 lg:px-6  text-white  ">
                   {" "}
                   Each project requirements are unique making them require
-                  different technologies,frameworks or libraries to accomplish.{" "}
+                  different technologies, frameworks or libraries to accomplish.{" "}
                 </p>
               </div>
             </div>
@@ -337,7 +337,10 @@ const Main = () => {
           >
             <div className=" text-white flex  flex-wrap md:flex-row  w-full   md:container mx-auto justify-center items-center gap-5  z-30">
               <p>Contact me today: </p>
-              <a href="mailto:nsanthony95@gmail.com" className="text-white font-bold">
+              <a
+                href="mailto:nsanthony95@gmail.com"
+                className="text-white font-bold"
+              >
                 nsanthony95@gmail.com
               </a>
               <div className=" md:text-left text-center flex flex-col  items-center justify-evenly  container mt-20">
