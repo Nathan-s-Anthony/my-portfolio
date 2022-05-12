@@ -5,8 +5,9 @@ import ProjectsCompleted from "./images/Projects-completed.svg";
 import BlogPosts from "./images/Blog-posts.svg";
 import SemanticHtml from "./images/Semantic-html.jpg";
 import classnames from "classnames";
-import BookMarkThumbnail from "./images/Bookmark-Landing-Page-thumbnail.jpg";
-import Timetracking from "./images/Timetracking-dashboard-thumbnail.jpg";
+import BookMarkThumbnail from "./images/BookmarkLandingPage-Thumbnail.png";
+import Timetracking from "./images/Timetracking-dashboard-thumbnail.png";
+import LaunchCountDownTimer from "./images/CountDownTracker-Thumbnail.png";
 //import ReactIcon from './images/React-Icon.svg';
 const Images = ({ alt, images, arrI, arrO, borderRadius, width, height }) => {
   images = [
@@ -17,13 +18,14 @@ const Images = ({ alt, images, arrI, arrO, borderRadius, width, height }) => {
     [SemanticHtml],
     [BookMarkThumbnail],
     [Timetracking],
+    [LaunchCountDownTimer],
   ];
 
   return (
     <img
       src={`${images[arrI][arrO]}`}
       className={classnames(
-        ` rounded-${borderRadius}  z-10 w-${width} h-${height} relative  w-60 h-60  `
+        ` rounded-${borderRadius}  z-10 w-${width} h-${height} relative max-w-full  `
       )}
       alt={`${alt}`}
     />
