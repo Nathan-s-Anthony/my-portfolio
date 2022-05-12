@@ -3,7 +3,7 @@ import ProfilePic from "./images/Nathan-Anthony.png";
 import Ball from "./images/ball 03 copy.png";
 import ProjectsCompleted from "./images/Projects-completed.svg";
 import BlogPosts from "./images/Blog-posts.svg";
-import SemanticHtml from "./images/Semantic-html.jpg";
+import SemanticHtml from "./images/SemanticHTML-Thumbnail.png";
 import classnames from "classnames";
 import BookMarkThumbnail from "./images/BookmarkLandingPage-Thumbnail.png";
 import Timetracking from "./images/Timetracking-dashboard-thumbnail.png";
