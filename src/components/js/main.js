@@ -329,15 +329,13 @@ const Main = () => {
               </div>
             </div>
             <div className="w-full flex flex-row flex-wrap justify-center align-center lg:py-2 lg:px-6">
-              <article className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
-                <div className="relative w-full m-auto h-72">
+              <article className="max-w-sm rounded overflow-hidden shadow-lg  mt-10 mb-10">
+                <div className="relative   m-auto ">
                   <Images
                     arrI="4"
                     arrO="0"
                     alt="Semantic HTML Thumbnail"
                     borderRadius="none"
-                    width="full"
-                    height="full"
                   />
                 </div>
 
