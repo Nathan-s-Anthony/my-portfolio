@@ -138,18 +138,16 @@ const Main = () => {
               </div>
             </div>
             <div className="w-full flex flex-row flex-wrap justify-center align-center lg:py-2 lg:px-6 gap-10">
-              <section className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10 relative">
-                <div className="relative w-full m-auto h-72">
-                  <div className="w-full h-full">
-                    <Images
-                      arrI="5"
-                      arrO="0"
-                      alt="Bookmark Landing Page Thumbnail"
-                      borderRadius="none"
-                      width="full"
-                      height="full"
-                    />
-                  </div>
+              <section className="max-w-sm rounded overflow-hidden shadow-lg  mt-10 mb-10 relative">
+                <div className="relative m-auto ">
+                  <Images
+                    arrI="5"
+                    arrO="0"
+                    alt="Bookmark Landing Page Thumbnail"
+                    borderRadius="none"
+                    width="full"
+                    height="full"
+                  />
                 </div>
 
                 <div className="px-2 pt-4">
@@ -198,18 +196,72 @@ const Main = () => {
                   </span>
                 </div>
               </section>
-              <section className=" relative max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
-                <div className="relative w-full m-auto h-72">
-                  <div className="w-full h-full">
-                    <Images
-                      arrI="6"
-                      arrO="0"
-                      alt="Time Tracking Dashboard Thumbnail"
-                      borderRadius="none"
-                      width="full"
-                      height="full"
-                    />
+              <section className="max-w-sm rounded overflow-hidden shadow-lg mt-10 mb-10 relative">
+                <div className="relative   m-auto ">
+                  <Images
+                    arrI="7"
+                    arrO="0"
+                    alt="Bookmark Landing Page Thumbnail"
+                    borderRadius="none"
+                    width="full"
+                    height="full"
+                  />
+                </div>
+
+                <div className="px-2 pt-4">
+                  <div className="font-bold text-xl mb-2">
+                    Launch Countdown Timer
                   </div>
+                  <p className="text-gray-700 text-base">
+                    Track your daily, weekly or monthly routine with various
+                    activities with a simple and intuitive interface.Compare
+                    your results to previous weeks.
+                  </p>
+                </div>
+                <div className="px-2 pt-4">
+                  <a
+                    href="https://launch-countdown-timer-nathan.vercel.app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button
+                      className={
+                        "text-white bg-blue-600 transition duration-200 ease-in-out px-8 py-3 border transform hover:-translate-y-1  lg:w-6/6  rounded-md text-medium tracking-wide shadow-lg mt-5 mb-5 "
+                      }
+                    >
+                      View project
+                    </button>
+                  </a>
+                </div>
+                <div className="px-2 pt-4 pb-2">
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #Gatsby
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #React
+                  </span>
+
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #SCSS
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #FrontEnd
+                  </span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    #WebDevelopment
+                  </span>
+                </div>
+              </section>
+              <section className=" relative max-w-sm rounded overflow-hidden shadow-lg  mt-10 mb-10">
+                <div className="relative  m-auto ">
+                  <Images
+                    arrI="6"
+                    arrO="0"
+                    alt="Time Tracking Dashboard Thumbnail"
+                    borderRadius="none"
+                    width="full"
+                    height="full"
+                  />
                 </div>
 
                 <div className="px-2 pt-4">
