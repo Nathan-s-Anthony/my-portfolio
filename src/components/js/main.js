@@ -213,9 +213,9 @@ const Main = () => {
                     Launch Countdown Timer
                   </div>
                   <p className="text-gray-700 text-base">
-                    Track your daily, weekly or monthly routine with various
-                    activities with a simple and intuitive interface.Compare
-                    your results to previous weeks.
+                    Give your website a real time countdown before launching
+                    your site to your clients and visitors.Simple beautiful
+                    interface that is fully responsive.
                   </p>
                 </div>
                 <div className="px-2 pt-4">
