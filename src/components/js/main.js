@@ -50,7 +50,18 @@ const Main = () => {
               for everything Web Development
             </p>
             <div className="  flex md:flex-row flex-col align-center items-center  justify-center md:gap-12 lg:py-2 lg:px-6 lg:justify-start md:w-full w-full align-center gap-2 lg:mb-0 lg:mt-0 mb-10 ">
-              <Button text="Get in touch" />
+              <a
+                href="#contact"
+                className="  lg:w-6/6 w-4/6  flex md:flex-row flex-col align-center items-center  justify-center md:gap-12  lg:justify-start md:w-full  align-center gap-2 lg:mb-0 lg:mt-0 mb-10 "
+              >
+                <button
+                  className={
+                    "text-white bg-blue-600 transition duration-200 ease-in-out px-8 py-3 border transform hover:-translate-y-1 w-full lg:w-3/6  rounded-md text-medium tracking-wide shadow-lg mt-5 mb-5 "
+                  }
+                >
+                  Get in touch
+                </button>
+              </a>
             </div>
             <div className="bg-none xl:flex hidden	  w-full h-full flex-row md:flex-col align-center items-start  gap-5 lg:py-2 lg:px-6">
               <p className="text-gray-300 text-center ">Scroll Down</p>
@@ -127,7 +138,7 @@ const Main = () => {
               </div>
             </div>
             <div className="w-full flex flex-row flex-wrap justify-center align-center lg:py-2 lg:px-6 gap-10">
-              <section className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
+              <section className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10 relative">
                 <div className="relative w-full m-auto h-72">
                   <div className="w-full h-full">
                     <Images
@@ -187,7 +198,7 @@ const Main = () => {
                   </span>
                 </div>
               </section>
-              <section className="max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
+              <section className=" relative max-w-sm rounded overflow-hidden shadow-lg p-5 mt-10 mb-10">
                 <div className="relative w-full m-auto h-72">
                   <div className="w-full h-full">
                     <Images
